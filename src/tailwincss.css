@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+   font-family: 'Biotif';
+   font-weight: 400;
+   font-style: normal;
+   src: url('/src/fonts/biofit/Fontspring-DEMO-biotif-regular.woff2') format('woff2')
+}
+
+@font-face {
+   font-family: 'Biotif';
+   font-weight: 400;
+   font-style: italic;
+   src: url('/src/fonts/biofit/Fontspring-DEMO-biotif-regularitalic.woff2') format('woff2')
+}
