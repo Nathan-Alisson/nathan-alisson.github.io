@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+   // ==================== || Page scroll management
    const sections = document.querySelectorAll('.part');
 
    function scrollToSection(index) {
@@ -9,19 +10,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
    document.addEventListener('wheel', function (event) {
       if (event.deltaY > 0) {
-         // Scrolling down
-         currentSectionIndex++;
-         if (currentSectionIndex >= sections.length) {
+         if (++currentSectionIndex >= sections.length)
             currentSectionIndex = sections.length - 1;
-         }
       } else {
-         // Scrolling up
-         currentSectionIndex--;
-         if (currentSectionIndex < 0) {
+         if (--currentSectionIndex < 0)
             currentSectionIndex = 0;
-         }
       }
 
       scrollToSection(currentSectionIndex);
+   });
+
+   // ==================== || Menu
+   document.getElementById("toggleMenu").addEventListener("click", function () {
+      document.body.classList.toggle("overflow-hidden");
+      document.body.classList.toggle("active");
+
+      document.getElementById("menu").classList.toggle("-translate-x-[calc(100%_+_1rem)]");
+      document.querySelector("main").classList.toggle("overflow-hidden");
+      
+      this.classList.toggle("opened");
    });
 });
