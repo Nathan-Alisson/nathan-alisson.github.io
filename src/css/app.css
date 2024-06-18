@@ -648,6 +648,10 @@ video {
   z-index: 10;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -681,8 +685,8 @@ video {
   height: 40px;
 }
 
-.h-\[50px\] {
-  height: 50px;
+.h-\[45px\] {
+  height: 45px;
 }
 
 .h-\[75px\] {
@@ -701,8 +705,8 @@ video {
   width: 24px;
 }
 
-.w-\[50px\] {
-  width: 50px;
+.w-\[45px\] {
+  width: 45px;
 }
 
 .w-\[70\%\] {
@@ -806,11 +810,6 @@ video {
   background-color: transparent;
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-zinc-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
@@ -854,29 +853,14 @@ video {
   font-family: Biotif, sans-serif;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1042,61 +1026,9 @@ body.active .box-toggle {
     line-height: 1;
   }
 
-  .lg\:text-zinc-700 {
-    --tw-text-opacity: 1;
-    color: rgb(63 63 70 / var(--tw-text-opacity));
-  }
-
   .lg\:text-zinc-50 {
     --tw-text-opacity: 1;
     color: rgb(250 250 250 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:static {
-    position: static;
-  }
-
-  .xl\:right-auto {
-    right: auto;
-  }
-
-  .xl\:hidden {
-    display: none;
-  }
-
-  .xl\:h-auto {
-    height: auto;
-  }
-
-  .xl\:w-auto {
-    width: auto;
-  }
-
-  .xl\:translate-x-0 {
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .xl\:items-center {
-    align-items: center;
-  }
-
-  .xl\:gap-8 {
-    gap: 2rem;
-  }
-
-  .xl\:bg-transparent {
-    background-color: transparent;
-  }
-
-  .xl\:p-0 {
-    padding: 0px;
   }
 }
 
