@@ -4,7 +4,9 @@ module.exports = {
    theme: {
       extend: {
          fontFamily: {
-            biotif: ['Biotif', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+            noto: ['Noto Sans Glagolitic', 'sans-serif'],
+            nunito: ['Nunito Sans', 'sans-serif'],
          },
 
          animation: {

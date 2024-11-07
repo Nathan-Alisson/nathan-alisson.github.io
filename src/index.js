@@ -43,13 +43,36 @@ document.addEventListener('DOMContentLoaded', function () {
    }, false);
 
    // ==================== || Menu
-   document.getElementById("toggleMenu").addEventListener("click", function () {
-      document.body.classList.toggle("overflow-hidden");
-      document.body.classList.toggle("active");
+   // document.getElementById("toggleMenu").addEventListener("click", function () {
+   //    document.body.classList.toggle("overflow-hidden");
+   //    document.body.classList.toggle("active");
 
-      document.getElementById("menu").classList.toggle("-translate-x-[calc(100%_+_1rem)]");
-      document.querySelector("main").classList.toggle("overflow-hidden");
+   //    document.getElementById("menu").classList.toggle("-translate-x-[calc(100%_+_1rem)]");
+   //    document.querySelector("main").classList.toggle("overflow-hidden");
       
-      this.classList.toggle("opened");
-   });
+   //    this.classList.toggle("opened");
+   // });
+   // =======================================================================================
+   function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+         rect.top >= 0 &&
+         rect.left >= 0 &&
+         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+   }
+
+   function checkTimelineItems() {
+      const items = document.querySelectorAll('.timeline-item');
+      items.forEach((item) => {
+         if (isElementInViewport(item)) {
+            item.classList.add('show');
+         }
+      });
+   }
+
+   window.addEventListener('scroll', checkTimelineItems);
+
+   checkTimelineItems();
 });

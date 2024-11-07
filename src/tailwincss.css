@@ -57,3 +57,111 @@ body.active .box-toggle {
    clip-path: circle(75%);
    background: linear-gradient(0, #373837cc, #161616cc);
 }
+
+.timeline::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 4px;
+   height: 100%;
+   background-color: #333;
+}
+
+.timeline-item {
+   position: relative;
+   width: 100%;
+   padding: 1rem 0;
+   text-align: center;
+}
+
+.timeline-item::before {
+   content: "";
+   position: absolute;
+   top: 0.5rem;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 15px;
+   height: 15px;
+   background-color: #333;
+   border-radius: 50%;
+}
+
+.timeline {
+   position: relative;
+   width: 50%;
+   margin: 0 auto;
+   padding: 2rem 0;
+}
+
+.timeline::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 4px;
+   height: 100%;
+   background-color: #333;
+}
+
+.timeline-item {
+   position: relative;
+   width: 100%;
+   padding: 1rem 0;
+   text-align: center;
+   opacity: 0;
+   transform: translateY(50px);
+   transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item::before {
+   content: "";
+   position: absolute;
+   top: 0.5rem;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 15px;
+   height: 15px;
+   background-color: #333;
+   border-radius: 50%;
+}
+
+.timeline-content {
+   position: relative;
+   width: 45%;
+   padding: 0.5rem;
+   border-top: 1px solid #e1e1e1;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+   float: left;
+   text-align: right;
+   transform: translateX(-100px);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+   float: right;
+   text-align: left;
+   transform: translateX(100px);
+}
+
+.timeline-item.show {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.timeline-item.show:nth-child(odd) .timeline-content {
+   transform: translateX(0);
+}
+
+.timeline-item.show:nth-child(even) .timeline-content {
+   transform: translateX(0);
+}
+
+.timeline-item::after {
+   content: "";
+   display: table;
+   clear: both;
+}
