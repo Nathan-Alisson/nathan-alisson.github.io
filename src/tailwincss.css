@@ -76,6 +76,10 @@ body.active .box-toggle {
    text-align: center;
 }
 
+.timeline-item p  {
+   font-size: 0.75rem;
+}
+
 .timeline-item::before {
    content: "";
    position: absolute;
