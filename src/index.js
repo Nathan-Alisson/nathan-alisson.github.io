@@ -1,3 +1,12 @@
+$(document).ready(function () {
+   $('#button-menu').click(function () {
+      $('body').toggleClass('overflow-hidden');
+      $('#navbar').toggleClass('active');
+      $(this).toggleClass('opened');
+   });
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
    // ==================== || Page scroll management
    const sections = document.querySelectorAll('.part');

@@ -12,53 +12,68 @@
 </head>
 
 <body class="text-zinc-100 bg-neutral-900">
-   <header class="container fixed top-0 inset-x-0 left-0 flex justify-center mx-auto pt-6 2xl:px-20 z-50">
-      <nav class="text-center bg-neutral-800/80 backdrop-blur border border-neutral-400/40 rounded px-4 w-fit">
-         <ul class="flex gap-4 font-nunito text-sm items-center uppercase justify-center py-3 group">
-            <li
-               class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
-               <a href="#home">
-                  Início
-               </a>
-            </li>
-            <li
-               class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
-               <a href="#about-us">
-                  Sobre mim
-               </a>
-            </li>
-            <li
-               class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
-               <a href="#skills">
-                  Habilidades
-               </a>
-            </li>
-            <li
-               class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
-               <a href="#trajectory">
-                  Trajetória
-               </a>
-            </li>
-            <li
-               class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
-               <a href="#projects">
-                  Projetos
-               </a>
-            </li>
-            <li
-               class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
-               <a href="#certifications">
-                  Certificações
-               </a>
-            </li>
-            <li
-               class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
-               <a href="#contact">
-                  Contato
-               </a>
-            </li>
-         </ul>
-      </nav>
+   <header class="fixed top-0 md:top-4 inset-x-0 w-full z-40">
+      <div class="container mx-auto px-4 2xl:px-20">
+         <nav id="navbar" class="absolute top-0 left-0 md:static text-center flex justify-center md:bg-neutral-800/80 md:backdrop-blur border border-neutral-400/40 rounded px-4 mx-auto w-full md:w-fit h-screen md:h-fit -z-10 overflow-hidden">
+            <ul class="relative flex flex-col md:flex-row items-center justify-center gap-4 text-lg md:text-sm font-nunito uppercase py-3 invisible md:visible opacity-0 md:opacity-100 group z-10 duration-300">
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <a href="#home">
+                     Início
+                  </a>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <a href="#about-us">
+                     Sobre mim
+                  </a>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <a href="#skills">
+                     Habilidades
+                  </a>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <a href="#trajectory">
+                     Trajetória
+                  </a>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <a href="#projects">
+                     Projetos
+                  </a>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <a href="#certifications">
+                     Certificações
+                  </a>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <a href="#contact">
+                     Contato
+                  </a>
+               </li>
+            </ul>
+            <div class="box-toggle">
+               <div class="box">
+                  <button class="menu-toggle select-none" id="button-menu" aria-label="button-menu">
+                     <svg viewBox="0 0 100 100">
+                        <path class="line line1"
+                           d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                           d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </nav>
+      </div>
    </header>      
 
    <div class="fixed inset-0 bg-[url('/src/images/background.png')] z-10"></div>
@@ -72,7 +87,7 @@
             </picture>
          </div>
          <div>
-            <h1 class="font-nunito font-medium text-8xl mb-3">
+            <h1 class="font-nunito font-medium text-4xl sm:text-6xl xl:text-8xl mb-3">
                Web Designer <br> <i>& Desenvolvedor</i>
             </h1>
             <p>
@@ -260,6 +275,7 @@
 
    </footer>
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
    <script src="./src/index.js" defer></script>
 </body>
 
