@@ -16,6 +16,25 @@
    src: url('/src/fonts/biofit/Fontspring-DEMO-biotif-regularitalic.woff2') format('woff2')
 }
 
+main > section {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   min-height: 100vh;
+   z-index: 40;
+   transition: .5s;
+   opacity: 0;
+   visibility: hidden;
+   transform: translateX(100%);
+}
+
+main > section.active {
+   transform: translateX(0);
+   opacity: 100;
+   visibility: visible;
+}
+
 #navbar.active .box-toggle {
    clip-path: circle(100%);
 }

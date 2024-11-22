@@ -671,6 +671,10 @@ video {
   height: 100vh;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -779,39 +783,14 @@ video {
   font-family: Nunito Sans, sans-serif;
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-medium {
@@ -829,10 +808,6 @@ video {
 
 .opacity-0 {
   opacity: 0;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
 }
 
 .duration-300 {
@@ -865,6 +840,25 @@ video {
   font-style: italic;
 
   src: url('/src/fonts/biofit/Fontspring-DEMO-biotif-regularitalic.woff2') format('woff2')
+}
+
+main > section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 40;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
+main > section.active {
+  transform: translateX(0);
+  opacity: 100;
+  visibility: visible;
 }
 
 #navbar.active .box-toggle {
@@ -1061,6 +1055,40 @@ video {
   content: "";
   display: table;
   clear: both;
+}
+
+.\[\&\>section\]\:container>section {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .\[\&\>section\]\:container>section {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .\[\&\>section\]\:container>section {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .\[\&\>section\]\:container>section {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .\[\&\>section\]\:container>section {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\[\&\>section\]\:container>section {
+    max-width: 1536px;
+  }
 }
 
 .before\:content-\[url\(\'\/src\/icons\/bootstrap\.png\'\)\]::before {
@@ -1262,13 +1290,6 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-}
-
 @media (min-width: 1280px) {
   .xl\:text-8xl {
     font-size: 6rem;
@@ -1300,8 +1321,14 @@ video {
        column-gap: 0.75rem;
 }
 
-.\[\&\>section\]\:h-screen>section {
-  height: 100vh;
+.\[\&\>section\]\:mx-auto>section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.\[\&\>section\]\:px-4>section {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .\[\&_h2\]\:mb-12 h2 {

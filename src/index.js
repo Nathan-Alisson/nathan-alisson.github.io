@@ -1,9 +1,24 @@
 $(document).ready(function () {
-   $('#button-menu').click(function () {
+   function toggleMenuAttr() {
       $('body').toggleClass('overflow-hidden');
       $('#navbar').toggleClass('active');
-      $(this).toggleClass('opened');
+      $('#button-menu').toggleClass('opened');
+   }
+
+   $('#button-menu').click(function () {
+      toggleMenuAttr();
    });
+
+   $('#navbar li button').each((_, item) => {
+      $(item).click(() => {
+         toggleMenuAttr();
+      });
+   });
+
+   $('#navbar li button').on('click', function (e) {
+      $('main > section').removeClass('active');
+      $(`${$(this).attr('name')}`).addClass('active')
+   })
 });
 
 
