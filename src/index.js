@@ -9,10 +9,13 @@ $(document).ready(function () {
    $("#button-menu").click(function () {
       toggleMenuAttr();
    });
+
+   $("#navMenu button").click(function() {
+     toggleMenuAttr();
+   })
    // ==================================
 
    $("#navigation button").click(function () {
-      // Remove "active" class from all parent elements
       $("#navigation button").parent().removeClass("active");
 
       var name = $(this).attr("name");

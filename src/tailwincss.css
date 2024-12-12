@@ -16,6 +16,15 @@
    src: url('/src/fonts/biofit/Fontspring-DEMO-biotif-regularitalic.woff2') format('woff2')
 }
 
+html,
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   max-width: 100vw;
+   overflow-x: hidden;
+}
+
 #navMenu li::after {
    content: '';
    position: absolute;
@@ -32,18 +41,15 @@
    transform: scaleX(1);
 }
 
-.box-toggle {
-   display: none;
-}
-
 main section {
-   position: absolute;
+   position: fixed;
    top: 0;
    left: 0;
    width: 100%;
    min-height: 100vh;
    transform: translateX(100%);
    transition: .3s;
+   z-index: -10;
 }
 
 .animation-from-right {
@@ -92,6 +98,12 @@ main section {
    }
 }
 
+/* ======================== Menu  */
+#navigation.active .box-toggle {
+   clip-path: circle(100%);
+}
+
+
 @media screen and (max-width: 768px) {
    .box-toggle {
       position: absolute;
@@ -101,6 +113,7 @@ main section {
       transition: 0.5s;
       clip-path: circle(23px at calc(100% - 48px) 35px);
       background: linear-gradient(45deg, #101010, #313131);
+      z-index: 10;
    }
 
    .box {
