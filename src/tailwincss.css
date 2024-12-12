@@ -32,6 +32,10 @@
    transform: scaleX(1);
 }
 
+.box-toggle {
+   display: none;
+}
+
 main section {
    position: absolute;
    top: 0;

@@ -2,7 +2,7 @@ $(document).ready(function () {
    // =========================== MENU
    function toggleMenuAttr() {
       $("body").toggleClass("overflow-hidden");
-      $("#navbar").toggleClass("active");
+      $("#navigation").toggleClass("active");
       $("#button-menu").toggleClass("opened");
    }
 
