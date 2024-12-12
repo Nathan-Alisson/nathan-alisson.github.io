@@ -46,10 +46,10 @@ main section {
    top: 0;
    left: 0;
    width: 100%;
-   min-height: 100vh;
+   height: 100vh;
    transform: translateX(100%);
    transition: .3s;
-   z-index: -10;
+   z-index: 10;
 }
 
 .animation-from-right {

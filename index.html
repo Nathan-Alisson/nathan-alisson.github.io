@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" >
 </head>
 
-<body class="font-merriweather text-zinc-100 bg-neutral-900 h-screen">
+<body class="font-merriweather text-zinc-100 bg-neutral-900 min-h-screen">
    <div class="fixed inset-0 bg-[url('/src/images/background.png')] -z-10"><div id="particles-js"></div></div>
    <nav id="navigation" class="md:fixed top-1/2 [&.goUp]:top-4 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 [&.goUp]:-translate-y-0 md:bg-neutral-600/40 rounded-lg px-8 md:py-3 duration-300 z-40 delay-700 [&.goUp]:delay-0">
       <div class="box-toggle">
@@ -68,20 +68,20 @@
          </div>
       </div>
    </nav>
-   <main class="">
+   <main>
       <div class="absolute inset-0 -z-10">
          <img src="/src/images/home.png" class="object-cover h-full"  alt="">
       </div>
-      <section id="about" class="bg-neutral-800/60">
+      <section id="about" class="bg-neutral-800/60 backdrop-blur py-20 md:py-0 overflow-x-hidden">
          <div class="container grid place-items-center mx-auto px-4 2xl:px-20 h-screen">
-            <div class="w-3/4 max-w-full">
+            <div class="max-w-full md:max-w-6xl">
                <h2 class="font-playfair text-3xl lg:text-4xl xl:text-5xl border-b-2 border-orange-500 pb-2 mb-12">
                   Quem Sou: <br>
                   <span class="text-xl lg:text-2xl xl:text-3xl">
                      Um Olhar para Trás e para o Futuro
                   </span>
                </h2>
-               <div class="flex flex-col gap-4 text-lg">
+               <div class="flex flex-col gap-4 text-lg font-light leading-8">
                   <p>
                      Sou desenvolvedor web com mais de 3 anos de experiência, especializado na construção de soluções front-end
                      utilizando tecnologias como HTML, CSS, TypeScript (JS). Também tenho conhecimento em React e Node.js,
