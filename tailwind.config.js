@@ -4,13 +4,12 @@ module.exports = {
    theme: {
       extend: {
          fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
-            noto: ['Noto Sans Glagolitic', 'sans-serif'],
-            nunito: ['Nunito Sans', 'sans-serif'],
+            merriweather: '"Merriweather", serif',
+            playfair: '"Playfair Display", serif',
          },
 
          animation: {
-            scroll: "scroll 2s infinite"
+            scroll: "scroll 2s infinite",
          },
 
          keyframes: {
@@ -18,11 +17,9 @@ module.exports = {
                "0%": { top: "-100%" },
                "25%": { opacity: "1" },
                "100%": { top: "20px", opacity: "0" },
-            }
-         }
+            },
+         },
       },
    },
-   plugins: [
-      require('tailwind-scrollbar')({ nocompatible: true }),
-   ],
+   plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };

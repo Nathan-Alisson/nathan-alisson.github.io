@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/src/css/app.css">
+   <title>Nathan Alisson | Desenvolvedor Web | React | HTML | CSS | Node.js</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Glagolitic&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+</head>
+
+<body class="text-zinc-100 bg-neutral-900">
+   <header class="fixed top-0 md:top-4 inset-x-0 w-full z-40">
+      <div class="container mx-auto px-4 2xl:px-20">
+         <nav id="navbar" class="absolute top-0 left-0 md:static text-center flex justify-center md:bg-neutral-800/80 md:backdrop-blur border border-neutral-400/40 rounded px-4 mx-auto w-full md:w-fit h-screen md:h-fit -z-10 overflow-hidden">
+            <ul class="relative flex flex-col md:flex-row items-center justify-center gap-4 text-lg md:text-sm font-nunito uppercase py-3 invisible md:visible opacity-0 md:opacity-100 group z-10 duration-300">
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <button name="#home">
+                     Início
+                  </button>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <button name="#about-us">
+                     Sobre mim
+                  </button>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <button name="#skills">
+                     Habilidades
+                  </button>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <button name="#trajectory">
+                     Trajetória
+                  </button>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <button name="#projects">
+                     Projetos
+                  </button>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <button name="#certifications">
+                     Certificações
+                  </button>
+               </li>
+               <li
+                  class="relative after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-l to-neutral-900 from-neutral-400 after:w-0 after:h-px after:hover:w-full after:duration-300">
+                  <button name="#contact">
+                     Contato
+                  </button>
+               </li>
+            </ul>
+            <div class="box-toggle">
+               <div class="box">
+                  <button class="menu-toggle select-none" id="button-menu" aria-label="button-menu">
+                     <svg viewBox="0 0 100 100">
+                        <path class="line line1"
+                           d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                           d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </header>      
+
+   <div class="fixed inset-0 bg-[url('/src/images/background.png')] z-10"></div>
+   <main class="relative flex z-10 min-h-screen overflow-hidden [&_h2]:font-thin [&_h2]:text-5xl [&_h2]:mb-12 [&>section]:container [&>section]:mx-auto [&>section]:px-4 [&>section]:2xl-20">
+      <section id="home" class="flex items-center justify-center active">
+         <div class="absolute -left-4 top-1/2 -translate-y-1/2 max-w-md -z-10 2xl:-left-20">
+            <picture class="select-none pointer-events-none">
+               <source srcset="" media="">
+               <source srcset="" media="">
+               <img src="/src/images/home.png" class="w-full" width="997" height="1373" alt="">
+            </picture>
+         </div>
+         <div>
+            <h1 class="font-nunito font-medium text-4xl sm:text-6xl xl:text-8xl mb-3">
+               Web Designer <br> <i>& Desenvolvedor</i>
+            </h1>
+            <p>
+               <i>Entre as linhas de código, descubro a elegância <br> da lógica e a emoção da criação.</i>
+            </p>
+         </div>
+      </section>
+      <section id="about-us" class="flex items-center py-3">
+         <div>
+            <h2 class="">
+               Sobre mim
+            </h2>
+            <div class="flex flex-col gap-4 max-w-3xl">
+               <p>
+                  Sou desenvolvedor web com mais de 3 anos de experiência, especializado na construção de soluções front-end
+                  utilizando tecnologias como HTML, CSS, TypeScript (JS). Também tenho conhecimento em React e Node.js,
+                  onde utilizo ferramentas e bibliotecas como TailwindCSS e Bootstrap para criar interfaces modernas,
+                  performáticas e otimizadas para a web.
+               </p>
+               <p>
+                  Sou formado em Análise e Desenvolvimento de Sistemas. E, ao longo da minha trajetória, desenvolvi mais de 15 projetos front-end, 
+                  incluindo trabalhos como freelancer e 2 anos de estágio focados em front-end e back-end (ASP.NET Core e APIs). Durante esse período, 
+                  também tive a oportunidade de trabalhar com PHP em manutenções e implementações de sistemas de transportadoras.
+               </p>
+            </div>
+         </div>
+      </section>
+      <section id="skills">
+         <h2 class="">
+            Habilidades
+         </h2>
+         <ul class="grid grid-flow-row grid-cols-5 gap-12 [&>li]:relative [&>li]:flex [&>li]:gap-x-3">
+            <li class="before:content-[url('/src/icons/html.png')]">
+               <h3>HTML</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/css.png')]">
+               <h3>CSS</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/js.png')]">
+               <h3>JavaScript</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/sass.png')]">
+               <h3>Sass</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/bootstrap.png')]">
+               <h3>Bootstrap</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/tailwind.png')]">
+               <h3>Tailwind CSS</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/node-js.png')]">
+               <h3>Node</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/typescript.png')]">
+               <h3>TypeScript</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/react.png')]">
+               <h3>React.js</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/electron.png')]">
+               <h3>Electron.js</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/prisma.png')]">
+               <h3>Prisma.js</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/express.png')]">
+               <h3>Express.js</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/vitest.png')]">
+               <h3>Vitest</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/sql_server.png')]">
+               <h3>SQL Server</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/mysql.png')]">
+               <h3>MySQL</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/c_sharp.png')]">
+               <h3>C#</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/net_core.png')]">
+               <h3>ASP.NET Core</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/php.png')]">
+               <h3>PHP</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/python.png')]">
+               <h3>Python</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/linux.png')]">
+               <h3>Linux</h3>
+            </li>
+            <li class="before:content-[url('/src/icons/github.png')]">
+               <h3>GitHub</h3>
+            </li>
+         </ul>
+      </section>
+      <section id="trajectory" class="flex flex-col">
+         <h2 class="text-center">
+            Trajetória
+         </h2>
+         <div class="overflow-x-hidden scrollbar-none">
+            <div class="timeline">
+               <div class="timeline-item">
+                  <div class="timeline-content">
+                     <h3>Hardware - Montagem e Manutenção</h3>
+                     <p>Microcamp - (11/2016 - 10/2018)</p>
+                  </div>
+               </div>
+               <div class="timeline-item">
+                  <div class="timeline-content">
+                     <h3>Sistemas de Informação</h3>
+                     <p>Unoeste - (01/2019 - 11/2020) (trancado)</p>
+                  </div>
+               </div>
+               <div class="timeline-item">
+                  <div class="timeline-content">
+                     <h3>Análise e Desenvolvimento de Sistemas</h3>
+                     <p>Unoeste - (1/2021 - 10/2024)</p>
+                  </div>
+               </div>
+               <div class="timeline-item">
+                  <div class="timeline-content">
+                     <h3>Estágio | Front-End</h3>
+                     <p>Agência Kender - (01/2022 - 01/2024)</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="projects">
+         <h2 class="">
+            Projetos
+         </h2>
+         <!-- <ul>
+            <li>
+               <h3>
+                  SycnMe
+               </h3>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente animi voluptatem eaque debitis
+                  eum dolores
+                  dolorum fugit dolorem tempore vero ducimus quam facere ad numquam, odio, libero molestias? Itaque.
+               </p>
+            </li>
+            <li>
+               <h3>
+                  Projeto II
+               </h3>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente animi voluptatem eaque debitis
+                  eum dolores
+                  dolorum fugit dolorem tempore vero ducimus quam facere ad numquam, odio, libero molestias? Itaque.
+               </p>
+            </li>
+         </ul> -->
+      </section>
+      <section id="certifications">
+         <h2>
+            Certificações
+         </h2>
+         <ul>
+            <li>
+               <h3>
+                  React do Zero a Maestria (C/ hooks, router, API, Projectos)
+               </h3>
+               <div>
+                  <p>
+                     Organização emissora:
+                  </p>
+                  <p>
+                     Udemy
+                  </p>
+               </div>
+            </li>
+         </ul>
+      </section>
+      <section id="contact">
+         <h2>
+            Contato
+         </h2>
+      </section>
+   </main>
+   <footer>
+
+   </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+   <script src="./src/index.js" defer></script>
+</body>
+
+</html>

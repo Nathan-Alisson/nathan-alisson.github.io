@@ -16,37 +16,76 @@
    src: url('/src/fonts/biofit/Fontspring-DEMO-biotif-regularitalic.woff2') format('woff2')
 }
 
-main > section {
+#navMenu li::after {
+   content: '';
    position: absolute;
    left: 0;
+   width: 100%;
+   height: 3px;
+   bottom: -0.25rem;
+   transition: 0.3s;
+   transform: scaleX(0);
+   border-radius: 20px;
+}
+
+#navMenu li:hover::after, #navMenu li.active::after {
+   transform: scaleX(1);
+}
+
+main section {
+   position: absolute;
    top: 0;
+   left: 0;
    width: 100%;
    min-height: 100vh;
-   z-index: 40;
-   transition: .5s;
-   opacity: 0;
-   visibility: hidden;
    transform: translateX(100%);
+   transition: .3s;
 }
 
-main > section.active {
-   transform: translateX(0);
-   opacity: 100;
-   visibility: visible;
+.animation-from-right {
+   animation: fromRight 1.3s ease-out forwards;
 }
 
-#navbar.active .box-toggle {
-   clip-path: circle(100%);
+.animation-going-left {
+   animation: goingLeft 1s ease-out forwards;
 }
 
-#navbar.active > ul {
-   visibility: visible !important;
-   opacity: 100 !important;
-   transition-delay: .3s;
+.animation-delay-300 {
+   animation-delay: 300ms;
 }
 
-.box-toggle {
-   display: none;
+@keyframes fromRight {
+   0% {
+      transform: translateX(100%);
+      clip-path: circle(2% at 50% 50%);
+   }
+   50% {
+      transform: translateX(0);
+      clip-path: circle(2% at 50% 50%);
+   }
+   100% {
+      clip-path: circle(100%);
+      transform: translateX(0);
+   }
+}
+
+@keyframes goingLeft {
+   0% {
+      transform: translateX(0);
+      clip-path: circle(100%);
+   }
+
+   50% {
+      transform: translateX(0);
+      clip-path: circle(2% at 50% 50%);
+      opacity: 1;
+   }
+
+   100% {
+      transform: translateX(-100%);
+      clip-path: circle(2% at 50% 50%);
+      opacity: 0;
+   }
 }
 
 @media screen and (max-width: 768px) {
