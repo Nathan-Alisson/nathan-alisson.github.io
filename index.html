@@ -13,45 +13,45 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" >
 </head>
 
-<body class="font-merriweather text-zinc-100 bg-neutral-900 min-h-screen">
+<body class="font-merriweather text-light bg-dark min-h-screen">
    <div class="fixed inset-0 bg-[url('/src/images/background.png')] -z-10"><div id="particles-js"></div></div>
-   <nav id="navigation" class="md:fixed top-1/2 [&.goUp]:top-4 left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 [&.goUp]:-translate-y-0 md:bg-neutral-600/40 rounded-lg px-8 md:py-3 duration-300 z-40 delay-700 [&.goUp]:delay-0">
-      <div class="box-toggle">
+   <nav id="navigation" class="sticky top-0 flex items-center h-[55px] border-b border-neutral-700 px-4 2xl:px-20 z-50">
+      <div class="box-toggle w-full">
          <div class="box">
             <ul id="navMenu" class="absolute md:static top-1/2 left-1/2 -translate-x-1/2 md:translate-x-0 -translate-y-1/2 md:translate-y-0 flex gap-6 items-center flex-col md:flex-row text-lg font-medium [&>li]:relative [&>li]:after:bg-orange-500">
-               <li class="[&.active]:after:bg-green-500 [&.active]:text-green-500 [&.active]:pointer-events-none">
-                  <button type="button" name="home" class="outline-none hover:text-orange-500 duration-300 whitespace-nowrap">
+               <li class="flex-1">
+                  <button type="button" name="home" class="outline-none hover:text-highlight hover:drop-shadow-[0_0px_0.5rem_#01C38D66] duration-300 whitespace-nowrap">
                      <i class="fa-solid fa-house"></i>
                   </button>
                </li>
-               <li class="[&.active]:after:bg-green-500 [&.active]:text-green-500 [&.active]:pointer-events-none">
-                  <button type="button" name="about" class="outline-none hover:text-orange-500 duration-300 whitespace-nowrap">
+               <li class="[&.active]:after:bg-light [&.active]:pointer-events-none">
+                  <button type="button" name="about" class="outline-none hover:text-highlight hover:drop-shadow-[0_0px_0.5rem_#01C38D66] duration-300 whitespace-nowrap">
                      Sobre mim
                   </button>
                </li>
-               <li class="[&.active]:after:bg-green-500 [&.active]:text-green-500 [&.active]:pointer-events-none">
-                  <button type="button" name="skills" class="outline-none hover:text-orange-500 duration-300 whitespace-nowrap">
+               <li class="[&.active]:after:bg-light [&.active]:pointer-events-none">
+                  <button type="button" name="skills" class="outline-none hover:text-highlight hover:drop-shadow-[0_0px_0.5rem_#01C38D66] duration-300 whitespace-nowrap">
                      Habilidades
                   </button>
                </li>
-               <li class="[&.active]:after:bg-green-500 [&.active]:text-green-500 [&.active]:pointer-events-none">
-                  <button type="button" name="trajectory" class="outline-none hover:text-orange-500 duration-300 whitespace-nowrap">
+               <li class="[&.active]:after:bg-light [&.active]:pointer-events-none">
+                  <button type="button" name="trajectory" class="outline-none hover:text-highlight hover:drop-shadow-[0_0px_0.5rem_#01C38D66] duration-300 whitespace-nowrap">
                      Trajetória
                   </button>
                </li>
-               <li class="[&.active]:after:bg-green-500 [&.active]:text-green-500 [&.active]:pointer-events-none">
-                  <button type="button" name="projects" class="outline-none hover:text-orange-500 duration-300 whitespace-nowrap">
+               <li class="[&.active]:after:bg-light [&.active]:pointer-events-none">
+                  <button type="button" name="projects" class="outline-none hover:text-highlight hover:drop-shadow-[0_0px_0.5rem_#01C38D66] duration-300 whitespace-nowrap">
                      Projetos
                   </button>
                </li>
-               <li class="[&.active]:after:bg-green-500 [&.active]:text-green-500 [&.active]:pointer-events-none">
+               <li class="[&.active]:after:bg-light [&.active]:pointer-events-none">
                   <button type="button" name="certifications"
-                     class="outline-none hover:text-orange-500 duration-300 whitespace-nowrap">
+                     class="outline-none hover:text-highlight hover:drop-shadow-[0_0px_0.5rem_#01C38D66] duration-300 whitespace-nowrap">
                      Certificações
                   </button>
                </li>
-               <li class="[&.active]:after:bg-green-500 [&.active]:text-green-500 [&.active]:pointer-events-none">
-                  <button type="button" name="contact" class="outline-none hover:text-orange-500 duration-300 whitespace-nowrap">
+               <li class="[&.active]:after:bg-light [&.active]:pointer-events-none">
+                  <button type="button" name="contact" class="outline-none hover:text-highlight hover:drop-shadow-[0_0px_0.5rem_#01C38D66] duration-300 whitespace-nowrap">
                      Contato
                   </button>
                </li>
@@ -69,19 +69,17 @@
       </div>
    </nav>
    <main>
-      <div class="absolute inset-0 -z-10">
+      <div class="absolute inset-0 top-[55px] -z-10">
          <img src="/src/images/home.png" class="object-cover h-full"  alt="">
       </div>
-      <section id="about" class="bg-neutral-800/60 backdrop-blur py-20 md:py-0 overflow-x-hidden">
-         <div class="container grid place-items-center mx-auto px-4 2xl:px-20 h-screen">
+      <section id="about" class="flex bg-dark/70 backdrop-blur overflow-x-hidden">
+         <div class="container flex items-center justify-center mx-auto px-4 2xl:px-20 h-full">
             <div class="max-w-full md:max-w-6xl">
-               <h2 class="font-playfair text-3xl lg:text-4xl xl:text-5xl border-b-2 border-orange-500 pb-2 mb-12">
-                  Quem Sou: <br>
-                  <span class="text-xl lg:text-2xl xl:text-3xl">
-                     Um Olhar para Trás e para o Futuro
-                  </span>
+               <h2 class="relative font-playfair text-3xl text-highlight lg:text-4xl xl:text-5xl drop-shadow-green mb-12 after:absolute after:-bottom-3 after:left-0 after:w-[120px] after:h-0.5 after:bg-light">
+                  <span class="text-sm text-light">Um Olhar para Trás e para o Futuro</span> <br>
+                  Quem Sou:
                </h2>
-               <div class="flex flex-col gap-4 text-lg font-light leading-8">
+               <div class="flex flex-col gap-4 text-lg font-light leading-10">
                   <p>
                      Sou desenvolvedor web com mais de 3 anos de experiência, especializado na construção de soluções front-end
                      utilizando tecnologias como HTML, CSS, TypeScript (JS). Também tenho conhecimento em React e Node.js,
@@ -91,23 +89,149 @@
                   <p>
                      Sou formado em Análise e Desenvolvimento de Sistemas. E, ao longo da minha trajetória, desenvolvi mais de 15
                      projetos front-end,
-                     incluindo trabalhos como freelancer e 2 anos de estágio focados em front-end e back-end (ASP.NET Core e APIs).
+                     incluindo trabalhos como freelancer e 2 anos de estágio focados em front-end e back-end (ASP.NET Core e
+                     APIs).
                      Durante esse período,
-                     também tive a oportunidade de trabalhar com PHP em manutenções e implementações de sistemas de transportadoras.
+                     também tive a oportunidade de trabalhar com PHP em manutenções e implementações de sistemas de
+                     transportadoras.
                   </p>
                </div>
             </div>
          </div>
       </section>
-      <section id="skills" class="bg-emerald-300/20">
-      
+      <section id="skills" class="flex items-center justify-center bg-dark/70 backdrop-blur overflow-x-hidden">
+         <div class="container mx-auto px-4 2xl:px-20 h-full">
+            <h2 class="relative font-playfair text-3xl text-highlight drop-shadow-green lg:text-4xl xl:text-5xl mb-12 after:absolute after:-bottom-3 after:left-0 after:w-[120px] after:h-0.5 after:bg-light">
+               <span class="text-sm text-light">Serviços</span> <br>
+               Conjunto de Habilidades
+            </h2>
+            <ul class="grid grid-flow-row md:grid-cols-2 gap-8 [&>li]:relative [&>li]:flex [&>li]:gap-x-3">
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <div class="flex gap-x-4 mb-4">
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/html.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/css.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/js.png')]"></span>
+                  </div>
+                  <div class="">
+                     <h3 class="font-merriweather text-lg mb-3">
+                        <b>HTML, CSS, JavaScript</b>
+                     </h3>
+                     <p class="font-light">
+                        Aprendi HTML, CSS e JavaScript na faculdade e aperfeiçoei esses conhecimentos no
+                        estágio, onde apliquei as tecnologias
+                        no desenvolvimento de websites, criando páginas interativas e responsivas.
+                     </p>
+                  </div>
+               </li>
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <div class="flex gap-x-4 mb-4">
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/sass.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/bootstrap.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/tailwind.png')]"></span>
+                  </div>
+                  <div>
+                     <h3 class="font-merriweather text-lg mb-3">
+                        <b>Sass, Bootstrap, Tailwind Css</b>
+                     </h3>
+                     <p class="font-light">
+                        Aprendi a usar Sass e Bootstrap no estágio, que eram as tecnologias padrão da empresa.
+                        Também estudei Tailwind CSS por
+                        conta própria para desenvolver em React.js.
+                     </p>
+                  </div>
+               </li>
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <div class="flex gap-x-4 mb-4">
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/node-js.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/typescript.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/react.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/electron.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/prisma.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/express.png')]"></span>
+                  </div>
+                  <div>
+                     <h3 class="font-merriweather text-lg mb-3">
+                        <b>Node: TypeScript, React, Electron, Prisma...</b>
+                     </h3>
+                     <p class="font-light">
+                        Comecei a estudar Node por conta própria e usei no estágio e na faculdade. No estágio,
+                        utilizei React e Electron para
+                        criar ferramentas, enquanto em projetos maiores, apliquei TypeScript. Na faculdade, além de React, usei
+                        Express, Prisma
+                        e outras bibliotecas para desenvolvimento full-stack.
+                     </p>
+                  </div>
+               </li>
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <div class="mb-4">
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/vitest.png')]"></span>
+                  </div>
+                  <div>
+                     <h3 class="font-merriweather text-lg mb-3">
+                        <b>Vitest</b>
+                     </h3>
+                     <p class="font-light">
+                        Aprendi sobre testes na faculdade e estudei Vitest por conta própria, aplicando o básico em alguns projetos de back-end.
+                     </p>
+                  </div>
+               </li>
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <div class="flex gap-x-4 mb-4">
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/sql_server.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/mysql.png')]"></span>
+                  </div>
+                  <div>
+                     <h3 class="font-merriweather text-lg mb-3">
+                        <b>SQL Server, MySQL</b>
+                     </h3>
+                     <p class="font-light">
+                        No estágio de 2 anos, trabalhei com SQL Server em aplicações ASP.NET Core e com MySQL para manutenção e atualização de
+                        sistemas em PHP (XAMPP). Também usei MySQL em projetos acadêmicos.
+                     </p>
+                  </div>
+               </li>
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <div class="flex gap-x-4 mb-4">
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/c_sharp.png')]"></span>
+                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/net_core.png')]"></span>
+                  </div>
+                  <div>
+                     <h3>C#, ASP.NET Core</h3>
+                  </div>
+               </li>
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <span class="w-[24px] h-[30px] before:content-[url('/src/icons/php.png')]"></span>
+                  <div>
+                     <h3>PHP</h3>
+                  </div>
+               </li>
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <span class="w-[24px] h-[30px] before:content-[url('/src/icons/python.png')]"></span>
+                  <div>
+                     <h3>Python</h3>
+                  </div>
+               </li>
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <span class="w-[24px] h-[30px] before:content-[url('/src/icons/linux.png')]"></span>
+                  <div>
+                     <h3>Linux</h3>
+                  </div>
+               </li>
+               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
+                  <span class="w-[24px] h-[30px] before:content-[url('/src/icons/github.png')]"></span>
+                  <div>
+                     <h3>GitHub</h3>
+                  </div>
+               </li>
+            </ul>
+         </div>
       </section>
    </main>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-   <script type="text/javascript" src="/src/js/particles.js"></script>
-   <script type="text/javascript" src="/src/js/app.js"></script>
+   <!-- <script type="text/javascript" src="/src/js/particles.js"></script>
+   <script type="text/javascript" src="/src/js/app.js"></script> -->
    <script src="/src/index.js"></script>
 </body>
 

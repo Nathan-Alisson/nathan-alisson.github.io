@@ -20,7 +20,6 @@ $(document).ready(function () {
 
       var name = $(this).attr("name");
       $(this).parent().toggleClass("active");
-      $("#navigation").toggleClass("goUp", name !== "home");
 
       $("main>section").each(function () {
          var $this = $(this);

@@ -2,10 +2,26 @@
 module.exports = {
    content: ["./*.html"],
    theme: {
+      colors: {
+         dark: "#191E29",
+         "blue-dark": "#132D46",
+         gray: "#696E79",
+         light: "#ffffff",
+         highlight: "#01C38D",
+      },
+
       extend: {
          fontFamily: {
             merriweather: '"Merriweather", serif',
             playfair: '"Playfair Display", serif',
+         },
+
+         dropShadow: {
+            "green": "0 0 0.5rem #01C38D66",
+         },
+
+         boxShadow: {
+            "box": "0 0 0.5rem"
          },
 
          animation: {
