@@ -638,6 +638,10 @@ video {
   right: 0px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -677,6 +681,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .flex {
@@ -719,6 +727,10 @@ video {
   max-width: 48rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -734,6 +746,11 @@ video {
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-scale-x-100 {
+  --tw-scale-x: -1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -757,10 +774,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -853,8 +866,18 @@ video {
   background-size: cover;
 }
 
-.bg-\[18\%_15\%\] {
-  background-position: 18% 15%;
+.bg-\[50\%_0\%\] {
+  background-position: 50% 0%;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-\[50\%_100\%\] {
+  -o-object-position: 50% 100%;
+     object-position: 50% 100%;
 }
 
 .p-6 {
@@ -883,16 +906,12 @@ video {
   text-align: center;
 }
 
-.text-end {
-  text-align: end;
+.font-playwrite {
+  font-family: "Playwrite VN", serif;
 }
 
-.font-merriweather {
-  font-family: "Merriweather", serif;
-}
-
-.font-playfair {
-  font-family: "Playfair Display", serif;
+.font-roboto {
+  font-family: "Roboto Condensed", serif;
 }
 
 .text-3xl {
@@ -935,9 +954,9 @@ video {
   line-height: 2.5rem;
 }
 
-.text-emerald-500 {
+.text-emerald-400 {
   --tw-text-opacity: 1;
-  color: rgb(16 185 129 / var(--tw-text-opacity));
+  color: rgb(52 211 153 / var(--tw-text-opacity));
 }
 
 .text-gray-50 {
@@ -945,19 +964,9 @@ video {
   color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
-.text-orange-500 {
+.text-orange-400 {
   --tw-text-opacity: 1;
-  color: rgb(249 115 22 / var(--tw-text-opacity));
-}
-
-.text-sky-500 {
-  --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(251 146 60 / var(--tw-text-opacity));
 }
 
 .text-zinc-100 {
@@ -967,6 +976,10 @@ video {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .shadow-box {
@@ -980,13 +993,8 @@ video {
   outline-offset: 2px;
 }
 
-.drop-shadow-emerald {
-  --tw-drop-shadow: drop-shadow(0 0 0.5rem #10b98133);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .drop-shadow-orange {
-  --tw-drop-shadow: drop-shadow(0 0 0.5rem #f9731633);
+  --tw-drop-shadow: drop-shadow(0 0 0.5rem #f9731655);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1380,9 +1388,9 @@ main>section::-webkit-scrollbar {
   top: -0.75rem;
 }
 
-.before\:right-0::before {
+.before\:left-1\/2::before {
   content: var(--tw-content);
-  right: 0px;
+  left: 50%;
 }
 
 .before\:h-0::before {
@@ -1395,15 +1403,21 @@ main>section::-webkit-scrollbar {
   height: 0.125rem;
 }
 
-.before\:w-\[120px\]::before {
+.before\:w-1\/4::before {
   content: var(--tw-content);
-  width: 120px;
+  width: 25%;
 }
 
-.before\:bg-emerald-500::before {
+.before\:-translate-x-1\/2::before {
+  content: var(--tw-content);
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:bg-white::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .before\:content-\[url\(\'\/src\/icons\/bootstrap\.png\'\)\]::before {
@@ -1583,9 +1597,17 @@ main>section::-webkit-scrollbar {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .sm\:opacity-100 {
+    opacity: 1;
   }
 }
 
@@ -1655,13 +1677,17 @@ main>section::-webkit-scrollbar {
     max-width: 48rem;
   }
 
+  .lg\:max-w-4xl {
+    max-width: 56rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
-  .lg\:text-8xl {
-    font-size: 6rem;
+  .lg\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
@@ -1683,8 +1709,8 @@ main>section::-webkit-scrollbar {
     left: -5rem;
   }
 
-  .\32xl\:max-w-4xl {
-    max-width: 56rem;
+  .\32xl\:max-w-5xl {
+    max-width: 64rem;
   }
 
   .\32xl\:px-20 {

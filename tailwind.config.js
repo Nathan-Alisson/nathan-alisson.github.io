@@ -4,13 +4,13 @@ module.exports = {
    theme: {
       extend: {
          fontFamily: {
-            merriweather: '"Merriweather", serif',
-            playfair: '"Playfair Display", serif',
+            roboto: '"Roboto Condensed", serif',
+            playwrite: '"Playwrite VN", serif',
          },
 
          dropShadow: {
-            orange: "0 0 0.5rem #f9731633",
-            emerald: "0 0 0.5rem #10b98133",
+            orange: "0 0 0.5rem #f9731655",
+            emerald: "0 0 0.5rem #10b98155",
          },
 
          boxShadow: {
