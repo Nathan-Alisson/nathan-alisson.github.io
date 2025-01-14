@@ -10,6 +10,7 @@ module.exports = {
 
          dropShadow: {
             orange: "0 0 0.5rem #f9731633",
+            emerald: "0 0 0.5rem #10b98133",
          },
 
          boxShadow: {
