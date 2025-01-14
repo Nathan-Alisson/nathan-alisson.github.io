@@ -25,26 +25,10 @@ body {
    overflow-x: hidden;
 }
 
-#navMenu li:not(:nth-child(1))::after {
-   content: '';
-   position: absolute;
-   left: 0;
-   width: 100%;
-   height: 3px;
-   bottom: -0.25rem;
-   transition: 0.3s;
-   transform: scaleX(0);
-   border-radius: 20px;
-}
-
-#navMenu li:hover::after, #navMenu li.active::after {
-   transform: scaleX(1);
-}
 
 main > section {
    position: fixed;
    inset: 0;
-   top: 55px;
    transform: translateX(100%);
    transition: .3s;
    z-index: 10;
@@ -107,79 +91,117 @@ main>section::-webkit-scrollbar {
 }
 
 /* ======================== Menu  */
-#navigation.active .box-toggle {
+#navigation.active {
    clip-path: circle(100%);
 }
 
+#navigation.active {
+   background: #212121;
+}
 
-@media screen and (max-width: 768px) {
-   .box-toggle {
-      position: absolute;
-      display: block;
-      inset: 0;
-      height: 100vh;
-      transition: 0.5s;
-      clip-path: circle(23px at calc(100% - 48px) 35px);
-      background: linear-gradient(45deg, #101010, #313131);
-      z-index: 10;
-   }
 
-   .box {
-      display: flex;
-      height: 68px;
-      align-items: center;
-   }
+#navigation {
+   clip-path: circle(23px at calc(100% - 48px) 35px);
+}
 
-   .box .menu-toggle {
-      position: relative;
-      display: flex;
-      width: 35px;
-      height: 35px;
-      align-items: center;
-      margin: 0 30px 0 auto;
-      background-color: transparent;
-      z-index: 10;
-   }
+.content {
+   display: flex;
+   height: 68px;
+   align-items: center;
+}
 
-   .line {
-      fill: none;
-      stroke: #f1f1f1;
+#navigation ul li {
+   position: relative;
+   padding-block: 8px;
+}
+
+#navigation ul li::after {
+   content: '';
+   position: absolute;
+   bottom: 0px;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   transform: scaleX(0);
+   transition: transform .3s;
+   transform-origin: right;
+}
+
+#navigation ul li:hover::after {
+   transform: scaleX(1);
+   transform-origin: left;
+}
+
+.content .menu-toggle {
+   position: relative;
+   display: flex;
+   width: 35px;
+   height: 35px;
+   align-items: center;
+   margin: 0 30px 0 auto;
+   background-color: transparent;
+   z-index: 10;
+}
+
+.line {
+   fill: none;
+   stroke: #f1f1f1;
+   stroke-width: 6;
+   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+               stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+      stroke-dasharray: 60 207;
       stroke-width: 6;
-      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
+}
 
-   .line1 {
-         stroke-dasharray: 60 207;
-         stroke-width: 6;
-   }
-
-   .line2 {
-         stroke-dasharray: 60 60;
-         stroke-width: 6;
-   }
-
-   .line3 {
-         stroke-dasharray: 60 207;
-         stroke-width: 6;
-   }
-
-    .menu-toggle.opened .line1 {
-      stroke-dasharray: 90 207;
-      stroke-dashoffset: -134;
+.line2 {
+      stroke-dasharray: 60 60;
       stroke-width: 6;
-   }
+}
 
-   .menu-toggle.opened .line2 {
-      stroke-dasharray: 1 60;
-      stroke-dashoffset: -30;
+.line3 {
+      stroke-dasharray: 60 207;
       stroke-width: 6;
-   }
+}
 
-   .menu-toggle.opened .line3 {
-      stroke-dasharray: 90 207;
-      stroke-dashoffset: -134;
-      stroke-width: 6;
+   .menu-toggle.opened .line1 {
+   stroke-dasharray: 90 207;
+   stroke-dashoffset: -134;
+   stroke-width: 6;
+}
+
+.menu-toggle.opened .line2 {
+   stroke-dasharray: 1 60;
+   stroke-dashoffset: -30;
+   stroke-width: 6;
+}
+
+.menu-toggle.opened .line3 {
+   stroke-dasharray: 90 207;
+   stroke-dashoffset: -134;
+   stroke-width: 6;
+}
+/* ======================== Menu  */
+
+#nameSvg path {
+   fill: transparent;
+   stroke: #fff;
+   stroke-width: 0.1;
+   stroke-dasharray: 50;
+   stroke-dashoffset: 50;
+   animation: textAnimation 4s ease-in-out 1 forwards;
+} @keyframes textAnimation {
+   0% {
+      stroke-dashoffset: 50;
+   }
+   80% {
+      fill: transparent;
+   }
+   100% {
+      fill: #fff;
+      stroke-dashoffset: 0;
    }
 }
 

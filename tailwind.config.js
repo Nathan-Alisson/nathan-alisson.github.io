@@ -2,14 +2,6 @@
 module.exports = {
    content: ["./*.html"],
    theme: {
-      colors: {
-         dark: "#191E29",
-         "blue-dark": "#132D46",
-         gray: "#696E79",
-         light: "#ffffff",
-         highlight: "#01C38D",
-      },
-
       extend: {
          fontFamily: {
             merriweather: '"Merriweather", serif',
@@ -17,11 +9,11 @@ module.exports = {
          },
 
          dropShadow: {
-            "green": "0 0 0.5rem #01C38D66",
+            orange: "0 0 0.5rem #f9731633",
          },
 
          boxShadow: {
-            "box": "0 0 0.5rem"
+            box: "0 0 0.5rem",
          },
 
          animation: {

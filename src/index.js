@@ -10,9 +10,9 @@ $(document).ready(function () {
       toggleMenuAttr();
    });
 
-   $("#navMenu button").click(function() {
-     toggleMenuAttr();
-   })
+   $("#navigation ul button").click(function () {
+      toggleMenuAttr();
+   });
    // ==================================
 
    $("#navigation button").click(function () {
