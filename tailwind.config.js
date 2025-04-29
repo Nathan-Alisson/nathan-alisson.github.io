@@ -5,7 +5,7 @@ module.exports = {
       extend: {
          fontFamily: {
             roboto: '"Roboto Condensed", serif',
-            playwrite: '"Playwrite VN", serif',
+            playfair: '"Playfair Display", serif',
          },
 
          dropShadow: {

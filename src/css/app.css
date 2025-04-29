@@ -906,8 +906,8 @@ video {
   text-align: center;
 }
 
-.font-playwrite {
-  font-family: "Playwrite VN", serif;
+.font-playfair {
+  font-family: "Playfair Display", serif;
 }
 
 .font-roboto {
@@ -948,6 +948,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-10 {
