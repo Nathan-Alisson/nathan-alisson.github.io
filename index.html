@@ -12,7 +12,7 @@
 </head>
 
 <body class="font-roboto text-gray-50 bg-neutral-800 min-h-screen">
-   <nav id="navigation" class="absolute top-0 right-0 w-[280px] h-screen duration-500 bg-transparent z-50">
+   <nav id="navigation" class="absolute top-0 right-0 w-[280px] h-screen duration-500 bg-[#00000080] backdrop-blur-sm z-50">
       <div class="content">
          <ul class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-6 [&_li]:after:bg-red-500">
             <li class="[&.active]:after:bg-light [&.active]:pointer-events-none">
@@ -49,175 +49,178 @@
          </ul>
          <button class="menu-toggle outline-none" id="button-menu" name="menu" aria-label="button-menu">
             <svg viewBox="0 0 100 100">
-               <path class="line line1"
-                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+               <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                <path class="line line2" d="M 20,50 H 80" />
-               <path class="line line3"
-                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+               <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
             </svg>
          </button>
       </div>
    </nav>
    <main>
-      <div class="fixed inset-0 bg-[url('/src/images/background.png')] bg-cover bg-[50%_0%]">
-         <div class="flex items-center justify-center h-full">
-            <div class="max-w-xl lg:max-w-4xl 2xl:max-w-5xl text-center">
-               <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-7xl font-playfair italic font-bold text-orange-400 drop-shadow-orange pb-1 mb-6">
-                  Nathan Alisson
-               </h1>
-               <p class="relative font-light md:text-lg before:absolute before:-top-3 before:left-1/2 before:-translate-x-1/2 before:w-1/4 before:h-0.5 before:bg-white">
-                  Estou sempre em busca de novos conhecimentos e desafios, disposto a aprender e me adaptar para crescer em novas áreas
-                  e aprimorar minhas habilidades.
-               </p>
-            </div>
-         </div>
-      </div>
-      <section id="about" class="flex bg-zinc-800 overflow-x-hidden">
-         <div class="container mx-auto px-4 2xl:px-20 pt-14">
-            <div class="lg:max-w-3xl sm:flex flex-col justify-center h-full">
-               <h2 class="relative font-playfair text-3xl lg:text-4xl xl:text-5xl mb-12 after:absolute after:-bottom-3 after:left-0 after:w-[120px] after:h-0.5 after:bg-orange-100">
-                  <span class="text-sm text-light text-orange-400 drop-shadow-orange">Um Olhar para Trás e para o Futuro</span> <br>
-                  Quem Sou:
-               </h2>
-               <div class="flex flex-col gap-4 text-lg leading-10">
-                  <p>Iniciei minha graduação em Sistemas de Informação em 2019. No mesmo ano, comecei a atuar como freelancer na Ideia Embalagens, trabalhando como estoquista, onde era responsável pela separação de pedidos, conferência e armazenamento de produtos.</p>
-                  <p>Ainda em 2019, comecei um estágio na Cabonnet, auxiliando o estoque técnico. Minhas responsabilidades incluíam o recebimento, armazenamento, conferência e configuração de equipamentos, além da gestão de registros em sistema e planilhas. Em 2020, fui efetivado como Auxiliar Administrativo de Instalação, atuando no atendimento ao cliente, agendamento de serviços, suporte a técnicos de campo e gerenciamento de documentação.</p>
-                  <p>Em 2020, também mudei minha graduação para Análise e Desenvolvimento de Sistemas, curso que concluí em 2024. Em 2025, iniciei uma nova graduação em Administração para expandir meus conhecimentos em gestão e negócios.</p>
-                  <p>Em 2021, iniciei um novo estágio na Agência Kender, focado no desenvolvimento web. Durante dois anos, participei da criação de mais de 15 projetos de websites e APIs utilizando ASP.NET Core, realizei manutenções em sistemas PHP, desenvolvi e-commerces com WordPress (WP eCommerce), automatizei processos internos com Python e produzi documentação técnica.</p>
-                  <p>Em 2024, trabalhei por alguns meses no Bravura Carnes e Cortes, até o encerramento da unidade.</p>
-                  <p>Além da formação acadêmica, possuo cursos técnicos em Hardware, Montagem e Manutenção pela Microcramp (2016–2018) e Operador de TI pela Intertec (2011–2012).</p>
-                </div>                
-            </div>
-            <div class="absolute top-0 right-4 h-screen -scale-x-100 -z-10">
-               <img src="/src/images/home.png" class="object-contain h-full max-w-full object-[50%_100%] opacity-40 sm:opacity-100" alt="Nathan Alisson">
+      <section id="hero" class="animation-from-right hero-section">
+         <div class="fixed inset-0 bg-[url('/src/images/background.png')] bg-cover bg-[50%_0%] z-0">
+            <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+      
+            <div class="relative z-10 flex items-center justify-center h-full px-4">
+               <div class="text-center max-w-3xl xl:max-w-5xl mx-auto">
+                  <h1 class="text-5xl sm:text-6xl md:text-7xl font-playfair italic font-bold text-orange-400 drop-shadow-lg mb-6">
+                     Nathan Alisson
+                  </h1>
+      
+                  <p class="relative font-light text-base sm:text-lg md:text-xl text-zinc-100 max-w-2xl mx-auto leading-relaxed before:content-[''] before:absolute before:-top-4 before:left-1/2 before:-translate-x-1/2 before:w-1/4 before:h-0.5 before:bg-orange-300">
+                     Estou sempre em busca de novos conhecimentos e desafios, disposto a aprender e me adaptar para crescer em
+                     novas áreas e aprimorar minhas habilidades.
+                  </p>
+               </div>
             </div>
          </div>
       </section>
-      <section id="skills" class="flex bg-zinc-800 overflow-x-hidden">
-         <div class="container mx-auto px-4 2xl:px-20 pt-14">
-            <h2 class="relative font-playfair text-3xl lg:text-4xl xl:text-5xl mb-12 after:absolute after:-bottom-3 after:left-0 after:w-[120px] after:h-0.5 after:bg-orange-100">
-               <span class="text-sm text-light text-orange-400 drop-shadow-orange">Um Vislumbre das Minhas Competências</span> <br>
-               Habilidades que Possuo:
+
+      <section id="about" class="bg-zinc-900 py-16 text-zinc-100 overflow-x-hidden">
+         <div class="container mx-auto px-4 2xl:px-20 relative z-10">
+            <div class="lg:max-w-4xl mx-auto">
+               <h2 class="relative font-playfair text-4xl xl:text-5xl mb-16 text-white after:absolute after:-bottom-3 after:left-0 after:w-32 after:h-1 after:bg-orange-400">
+                  <span class="block text-sm text-orange-400 tracking-wide mb-1">Um Olhar para Trás e para o Futuro</span>
+                  Quem Sou
+               </h2>
+      
+               <div class="space-y-8 text-lg leading-relaxed text-zinc-200">
+                  <p><strong class="text-orange-300">2019:</strong> Iniciei minha graduação em Sistemas de Informação e
+                     comecei a trabalhar na Ideia Embalagens como estoquista, sendo responsável pela separação, conferência e
+                     armazenamento de produtos.</p>
+      
+                  <p><strong class="text-orange-300">Ainda em 2019:</strong> iniciei um estágio na Cabonnet, auxiliando o
+                     estoque técnico. Minhas atividades incluíam recebimento, armazenamento e configuração de equipamentos,
+                     além da organização de registros.</p>
+      
+                  <p><strong class="text-orange-300">2020:</strong> Fui efetivado como Auxiliar Administrativo de Instalação
+                     na Cabonnet, atuando no atendimento ao cliente, suporte aos técnicos de campo e gestão de documentos.
+                     Também mudei minha graduação para Análise e Desenvolvimento de Sistemas, concluída em 2024.</p>
+      
+                  <p><strong class="text-orange-300">2021–2023:</strong> Atuei como estagiário na Agência Kender,
+                     desenvolvendo mais de 15 projetos web e APIs em ASP.NET Core, com manutenção de sistemas em PHP, criação
+                     de e-commerces em WordPress e automações com Python.</p>
+      
+                  <p><strong class="text-orange-300">2024:</strong> Trabalhei no Bravura Carnes e Cortes até o encerramento da
+                     unidade.</p>
+      
+                  <p><strong class="text-orange-300">2025:</strong> Iniciei minha segunda graduação, agora em Administração,
+                     para ampliar minha visão em gestão e negócios.</p>
+      
+                  <p class="text-sm text-zinc-400 border-t border-zinc-700 pt-4">Formações complementares: Técnico em
+                     Hardware, Montagem e Manutenção pela Microcramp (2016–2018) e Operador de TI pela Intertec (2011–2012).
+                  </p>
+               </div>
+            </div>
+      
+            <div class="absolute top-0 right-0 h-full max-w-[40%] hidden sm:block -z-10 opacity-20">
+               <img src="/src/images/home.png" alt="Nathan Alisson" class="h-full object-contain object-right" />
+            </div>
+         </div>
+      </section>
+
+      <section id="skills" class="bg-zinc-900 py-16 text-zinc-100 overflow-x-hidden">
+         <div class="container mx-auto px-6 2xl:px-20">
+            <h2 class="relative font-playfair text-4xl xl:text-5xl mb-16 text-center after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-32 after:h-0.5 after:bg-orange-400">
+               <span class="block text-sm text-orange-400 mb-1 uppercase tracking-wider">
+                  Um Vislumbre das Minhas Competências
+               </span>
+               Habilidades que Possuo
             </h2>
-            <ul class="grid grid-flow-row md:grid-cols-2 gap-8 [&>li]:relative [&>li]:flex [&>li]:gap-x-3">
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <div class="flex gap-x-4 mb-4">
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/html.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/css.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/js.png')]"></span>
+      
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+               <!-- Front-End -->
+               <div class="rounded-2xl border border-zinc-700 bg-zinc-800 p-6 shadow-md">
+                  <h3 class="text-xl font-semibold mb-4 text-orange-300">Front-End</h3>
+                  <div class="flex flex-wrap gap-4 mb-4">
+                     <img src="/src/icons/html.png" alt="HTML" class="w-6 h-6">
+                     <img src="/src/icons/css.png" alt="CSS" class="w-6 h-6">
+                     <img src="/src/icons/js.png" alt="JavaScript" class="w-6 h-6">
+                     <img src="/src/icons/typescript.png" alt="TypeScript" class="w-6 h-6">
+                     <img src="/src/icons/sass.png" alt="Sass" class="w-6 h-6">
+                     <img src="/src/icons/bootstrap.png" alt="Bootstrap" class="w-6 h-6">
+                     <img src="/src/icons/tailwind.png" alt="Tailwind CSS" class="w-6 h-6">
+                     <img src="/src/icons/react.png" alt="React" class="w-6 h-6">
+                     <img src="/src/icons/net_core.png" alt=".NET Core" class="w-6 h-6">
                   </div>
-                  <div class="">
-                     <h3 class="font-merriweather text-lg mb-3">
-                        <b>HTML, CSS, JavaScript</b>
-                     </h3>
-                     <p class="font-light">
-                        Aprendi HTML, CSS e JavaScript na faculdade e aperfeiçoei esses conhecimentos no
-                        estágio, onde apliquei as tecnologias
-                        no desenvolvimento de websites, criando páginas interativas e responsivas.
-                     </p>
+                  <p class="text-sm text-zinc-300">
+                     Iniciei com HTML, CSS e JS na faculdade (Sistemas de Informação), criando projetos acadêmicos e pessoais.
+                     No estágio de 2 anos, desenvolvi mais de 15 projetos usando essas tecnologias. Utilizei React tanto no
+                     projeto final da faculdade quanto em projetos profissionais, incluindo aplicações desktop. Na empresa,
+                     usei ASP.NET Core no back-end, com Bootstrap e TailwindCSS no front-end (este último exclusivo com
+                     React). Trabalhei também com Sass em projetos PHP e em sistemas web.
+                  </p>
+               </div>
+      
+               <!-- Back-End -->
+               <div class="rounded-2xl border border-zinc-700 bg-zinc-800 p-6 shadow-md">
+                  <h3 class="text-xl font-semibold mb-4 text-orange-300">Back-End</h3>
+                  <div class="flex flex-wrap gap-4 mb-4">
+                     <img src="/src/icons/node-js.png" alt="Node.js" class="w-6 h-6">
+                     <img src="/src/icons/typescript.png" alt="TypeScript" class="w-6 h-6">
+                     <img src="/src/icons/electron.png" alt="Electron" class="w-6 h-6">
+                     <img src="/src/icons/prisma.png" alt="Prisma" class="w-6 h-6">
+                     <img src="/src/icons/express.png" alt="Express" class="w-6 h-6">
+                     <img src="/src/icons/vitest.png" alt="Vitest" class="w-6 h-6">
+                     <img src="/src/icons/net_core.png" alt=".NET Core" class="w-6 h-6">
                   </div>
-               </li>
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <div class="flex gap-x-4 mb-4">
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/sass.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/bootstrap.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/tailwind.png')]"></span>
+                  <p class="text-sm text-zinc-300">
+                     Utilizei Node.js em projetos full-stack na faculdade e para criar aplicações desktop com TypeScript.
+                     Aprendi Electron por hobby, criando ferramentas e apps de produtividade. Em projetos pessoais, explorei
+                     Vitest para testes automatizados com integração ao ecossistema do Vite. No TCC, usei Prisma.js e Express
+                     no back-end. Aprendi ASP.NET Core no estágio, desenvolvendo APIs e aplicações web.
+                  </p>
+               </div>
+      
+               <!-- Banco de Dados -->
+               <div class="rounded-2xl border border-zinc-700 bg-zinc-800 p-6 shadow-md">
+                  <h3 class="text-xl font-semibold mb-4 text-orange-300">Banco de Dados</h3>
+                  <div class="flex flex-wrap gap-4 mb-4">
+                     <img src="/src/icons/sql_server.png" alt="SQL Server" class="w-6 h-6">
+                     <img src="/src/icons/mysql.png" alt="MySQL" class="w-6 h-6">
                   </div>
-                  <div>
-                     <h3 class="font-merriweather text-lg mb-3">
-                        <b>Sass, Bootstrap, Tailwind Css</b>
-                     </h3>
-                     <p class="font-light">
-                        Aprendi a usar Sass e Bootstrap no estágio, que eram as tecnologias padrão da empresa.
-                        Também estudei Tailwind CSS por
-                        conta própria para desenvolver em React.js.
-                     </p>
+                  <p class="text-sm text-zinc-300">
+                     Experiência com bancos de dados relacionais, como SQL Server, utilizado em aplicações corporativas desenvolvidas com
+                     ASP.NET Core. Posteriormente, essas aplicações foram migradas para MySQL. Também utilizei MySQL com XAMPP para
+                     manutenções e atualizações em projetos desenvolvidos em PHP
+                  </p>
+               </div>
+      
+               <!-- Linguagens de Programação -->
+               <div class="rounded-2xl border border-zinc-700 bg-zinc-800 p-6 shadow-md">
+                  <h3 class="text-xl font-semibold mb-4 text-orange-300">Linguagens de Programação</h3>
+                  <div class="flex flex-wrap gap-4 mb-4">
+                     <img src="/src/icons/c_sharp.png" alt="C#" class="w-6 h-6">
+                     <img src="/src/icons/js.png" alt="JavaScript" class="w-6 h-6">
+                     <img src="/src/icons/typescript.png" alt="TypeScript" class="w-6 h-6">
+                     <img src="/src/icons/python.png" alt="Python" class="w-6 h-6">
+                     <img src="/src/icons/php.png" alt="PHP" class="w-6 h-6">
                   </div>
-               </li>
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <div class="flex gap-x-4 mb-4">
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/node-js.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/typescript.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/react.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/electron.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/prisma.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/express.png')]"></span>
+                  <p class="text-sm text-zinc-300">
+                     Iniciei meu aprendizado em programação em 2016 com Python, por meio de cursos online e tutoriais no YouTube. Com ele,
+                     explorei bibliotecas para automação, criação de websites, desenvolvimento mobile com Kivy e jogos com Pygame.
+                     Posteriormente, aprofundei meus conhecimentos com JavaScript e C/C++ durante a graduação em Sistemas de Informação.
+                     Adquiri experiência prática com C# (ASP.NET Core) e PHP em projetos na empresa de estágio, incluindo sistemas SaaS e
+                     integrações com transportadoras.
+                  </p>
+               </div>
+      
+               <!-- Outros -->
+               <div class="rounded-2xl border border-zinc-700 bg-zinc-800 p-6 shadow-md col-span-1 lg:col-span-2">
+                  <h3 class="text-xl font-semibold mb-4 text-orange-300">Outros</h3>
+                  <div class="flex flex-wrap gap-4 mb-4">
+                     <img src="/src/icons/linux.png" alt="Linux" class="w-6 h-6">
+                     <img src="/src/icons/github.png" alt="GitHub" class="w-6 h-6">
                   </div>
-                  <div>
-                     <h3 class="font-merriweather text-lg mb-3">
-                        <b>Node: TypeScript, React, Electron, Prisma...</b>
-                     </h3>
-                     <p class="font-light">
-                        Comecei a estudar Node por conta própria e usei no estágio e na faculdade. No estágio,
-                        utilizei React e Electron para
-                        criar ferramentas, enquanto em projetos maiores, apliquei TypeScript. Na faculdade, além de React, usei
-                        Express, Prisma
-                        e outras bibliotecas para desenvolvimento full-stack.
-                     </p>
-                  </div>
-               </li>
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <div class="mb-4">
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/vitest.png')]"></span>
-                  </div>
-                  <div>
-                     <h3 class="font-merriweather text-lg mb-3">
-                        <b>Vitest</b>
-                     </h3>
-                     <p class="font-light">
-                        Aprendi sobre testes na faculdade e estudei Vitest por conta própria, aplicando o básico em alguns projetos de back-end.
-                     </p>
-                  </div>
-               </li>
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <div class="flex gap-x-4 mb-4">
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/sql_server.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/mysql.png')]"></span>
-                  </div>
-                  <div>
-                     <h3 class="font-merriweather text-lg mb-3">
-                        <b>SQL Server, MySQL</b>
-                     </h3>
-                     <p class="font-light">
-                        No estágio de 2 anos, trabalhei com SQL Server em aplicações ASP.NET Core e com MySQL para manutenção e atualização de
-                        sistemas em PHP (XAMPP). Também usei MySQL em projetos acadêmicos.
-                     </p>
-                  </div>
-               </li>
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <div class="flex gap-x-4 mb-4">
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/c_sharp.png')]"></span>
-                     <span class="w-[24px] h-[30px] before:content-[url('/src/icons/net_core.png')]"></span>
-                  </div>
-                  <div>
-                     <h3>C#, ASP.NET Core</h3>
-                  </div>
-               </li>
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <span class="w-[24px] h-[30px] before:content-[url('/src/icons/php.png')]"></span>
-                  <div>
-                     <h3>PHP</h3>
-                  </div>
-               </li>
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <span class="w-[24px] h-[30px] before:content-[url('/src/icons/python.png')]"></span>
-                  <div>
-                     <h3>Python</h3>
-                  </div>
-               </li>
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <span class="w-[24px] h-[30px] before:content-[url('/src/icons/linux.png')]"></span>
-                  <div>
-                     <h3>Linux</h3>
-                  </div>
-               </li>
-               <li class="flex gap-y-3 flex-col border border-highlight shadow-box shadow-highlight/50 rounded p-6">
-                  <span class="w-[24px] h-[30px] before:content-[url('/src/icons/github.png')]"></span>
-                  <div>
-                     <h3>GitHub</h3>
-                  </div>
-               </li>
-            </ul>
+                  <p class="text-sm text-zinc-300">
+                     Familiaridade com sistemas Linux desde 2016, quando iniciei um curso de hardware e manutenção na Microcamp, onde tive
+                     contato com distribuições como Ubuntu, Mint, Debian, Fedora e CentOS. Atualmente, utilizo dual boot com Ubuntu para fins
+                     de estudo e desenvolvimento. Experiência com Git e GitHub adquirida no ambiente de estágio, onde realizava versionamento
+                     de código em equipe, criação e revisão de branches, pull requests e controle de histórico em projetos com ASP.NET Core e
+                     PHP.
+                  </p>
+               </div>
+            </div>
          </div>
       </section>
    </main>

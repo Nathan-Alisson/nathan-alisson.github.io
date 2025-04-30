@@ -14,3 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+# Run CSS
+tailwindcss -i src/tailwindcss.css -o src/css/app.css --watch

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   // =========================== MENU
+   // === MENU TOGGLE ===
    function toggleMenuAttr() {
       $("body").toggleClass("overflow-hidden");
       $("#navigation").toggleClass("active");
@@ -13,23 +13,26 @@ $(document).ready(function () {
    $("#navigation ul button").click(function () {
       toggleMenuAttr();
    });
-   // ==================================
 
    $("#navigation button").click(function () {
+      const sectionName = $(this).attr("name");
+
       $("#navigation button").parent().removeClass("active");
+      $(this).parent().addClass("active");
 
-      var name = $(this).attr("name");
-      $(this).parent().toggleClass("active");
+      $("main > section").each(function () {
+         const $section = $(this);
+         const sectionId = $section.attr("id");
 
-      $("main>section").each(function () {
-         var $this = $(this);
-         var isCurrentSection = $this.attr("id") === name;
+         if (sectionId === "hero") return;
 
-         var isGoingLeft =
-            $this.hasClass("animation-from-right") && !isCurrentSection;
+         const isCurrent = sectionId === sectionName;
 
-         $this.toggleClass("animation-from-right", isCurrentSection);
-         $this.toggleClass("animation-going-left", isGoingLeft);
+         $section.toggleClass("animation-from-right", isCurrent);
+         $section.toggleClass("hidden", !isCurrent);
+
+         const isGoingLeft = $section.hasClass("animation-from-right") && !isCurrent;
+         $section.toggleClass("animation-going-left", isGoingLeft);
       });
    });
 });
