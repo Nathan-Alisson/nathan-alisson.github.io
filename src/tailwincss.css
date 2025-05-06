@@ -90,12 +90,6 @@ main>section::-webkit-scrollbar {
    clip-path: circle(23px at calc(100% - 48px) 35px);
 }
 
-.content {
-   display: flex;
-   height: 68px;
-   align-items: center;
-}
-
 #navigation ul li {
    position: relative;
    padding-block: 8px;
@@ -118,17 +112,6 @@ main>section::-webkit-scrollbar {
    transform-origin: left;
 }
 
-.content .menu-toggle {
-   position: relative;
-   display: flex;
-   width: 35px;
-   height: 35px;
-   align-items: center;
-   margin: 0 30px 0 auto;
-   background-color: transparent;
-   z-index: 10;
-}
-
 .line {
    fill: none;
    stroke: #f1f1f1;
@@ -138,13 +121,13 @@ main>section::-webkit-scrollbar {
 }
 
 .line1 {
-      stroke-dasharray: 60 207;
-      stroke-width: 6;
+   stroke-dasharray: 60 207;
+   stroke-width: 6;
 }
 
 .line2 {
-      stroke-dasharray: 60 60;
-      stroke-width: 6;
+   stroke-dasharray: 60 60;
+   stroke-width: 6;
 }
 
 .line3 {
